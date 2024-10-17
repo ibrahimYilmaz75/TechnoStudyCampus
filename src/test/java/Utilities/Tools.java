@@ -1,0 +1,34 @@
+package Utilities;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+import java.util.List;
+
+public class Tools {    public static void Bekle(int sn){
+    try {
+        Thread.sleep(sn*1000);
+    }catch (InterruptedException e){
+        throw new RuntimeException(e);
+    }
+}
+//    public static void SuccessMessageValidation() {
+//        WebElement msgLabel=BaseDriver.driver.findElement(By.xpath(""));
+//        Assert.assertTrue(msgLabel.getText().toLowerCase().contains("successfully"));
+//    }
+    public static int RndSayiVer(int max)
+    {
+        return (int)(Math.random()*max);
+    }
+    public static boolean listContainsString(List<WebElement> list, String aranacakKelime)
+    {  boolean urunBulundu= false;
+        for (WebElement urun: list){
+            if (urun.getText().equals(aranacakKelime)) {
+                urunBulundu = true;
+                break;
+            }
+        }
+        return urunBulundu;
+    }
+}
