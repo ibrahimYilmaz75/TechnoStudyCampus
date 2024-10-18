@@ -7,7 +7,13 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
+/*
+ 1. "Kendi Kursunu Seç" bölümünde her kursun altında "Detaylı Bilgi" veya "More Info" gibi bir
+buton veya bağlantı görünmelidir.
+2. "Detaylı Bilgi" butonuna tıkladığımda, ilgili kursun ayrıntılı bilgi ve içeriklerinin bulunduğu
+kurs sayfasına yönlendirilmelidir.
+3. İçeriklerin bulunduğu kursa sayfasında Techno Study logosu olmalıdır
+* */
 public class CampusTest extends BaseDriver {
     @Test
     public void SDET(){
