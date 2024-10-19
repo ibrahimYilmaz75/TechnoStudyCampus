@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Suite">
+    <test  name="My Test 1" >
+        <parameter name="browserTipi" value="chrome"></parameter>
+        <classes>
+            <class name="US8"></class>
+        </classes>
+    </test>
+
+</suite>
