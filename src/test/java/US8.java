@@ -9,6 +9,13 @@ import org.testng.annotations.Test;
 import javax.swing.*;
 
 public class US8 extends BaseDriver {
+    /*
+Test Case 8: Terms Of Use
+1. "Bize Ulaşın" formunda "Şartları okudum ve kabul ettim" seçeneği bulunmalıdır.
+2. Bu seçeneği tıkladığımda, "Kullanım Şartları" sayfasına yönlendirilmelidir.
+3. "Kullanım Şartları" sayfası, kullanıcıların şartları okuyup anlamaları için uygun bir şekilde
+düzenlenmiş olmalıdır..
+*/
     @Test
     public void US8(){
         js.executeScript("window.scrollBy(0, 6000);");
